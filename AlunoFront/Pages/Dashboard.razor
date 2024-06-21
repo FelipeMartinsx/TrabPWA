@@ -1,0 +1,41 @@
+@page "/dashboard"
+@inject AlunoFront.Services.IAlunoService AlunoService
+
+<PageTitle>Dashboard</PageTitle>
+
+<h1>Dashboard da Auto Escola</h1>
+
+@if (alunos == null)
+{
+    <p>Carregando dados...</p>
+}
+else
+{
+    <div>
+        <h2>Resumo</h2>
+        <p>Total de Alunos: @alunos.Count</p>
+        <p>Reprovados (%): @String.Format("{0:0.00}", porcentagemReprovados) %</p>
+        <p>Aprovados (%): @String.Format("{0:0.00}", porcentagemAprovados) %</p>
+    </div>
+}
+
+@code {
+    private List<AlunoFront.Models.Aluno> alunos;
+    private double porcentagemReprovados;
+    private double porcentagemAprovados;
+
+    protected override async Task OnInitializedAsync()
+    {
+        alunos = await AlunoService.GetAlunos();
+
+        if (alunos != null && alunos.Count > 0)
+        {
+            int totalAlunos = alunos.Count;
+            int totalReprovados = AlunoService.GetQuantidadeReprovados(alunos);
+            int totalAprovados = AlunoService.GetQuantidadeAprovados(alunos);
+
+            porcentagemReprovados = (double)totalReprovados / totalAlunos * 100;
+            porcentagemAprovados = (double)totalAprovados / totalAlunos * 100;
+        }
+    }
+}

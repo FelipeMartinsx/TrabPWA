@@ -1,0 +1,84 @@
+@page "/aluno"
+@using AlunoFront.Models
+@using AlunoFront.Helpers
+@using System.Net.Http
+@using System.Text.Json
+@inject Api api
+
+<h1>Alunos</h1>
+
+<div class="form-group row">
+    <label for="filtroSituacao" class="col-sm-2 col-form-label">Filtrar por Situação:</label>
+    <div class="col-sm-4">
+        <select class="form-control" id="filtroSituacao" @bind="filtroSituacao">
+            <option value="">Todos</option>
+            <option value="aprovado">Aprovado</option>
+            <option value="reprovado">Reprovado</option>
+            <option value="estudante">Estudante</option>
+        </select>
+    </div>
+    <div class="col-sm-2">
+        <button class="btn btn-primary" @onclick="Filtrar">Filtrar</button>
+    </div>
+</div>
+
+@if (Objetos == null)
+{
+    <p><strong>Carregando...</strong></p>
+}
+else
+{
+    <a href=@($"/aluno/{Acoes.Inserir}") class="btn btn-primary">Inserir</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Matricula</th>
+                <th scope="col">Email</th>
+                <th scope="col">Situacao</th>
+                <th scope="col">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach(var obj in ObjetosFiltrados)
+        {
+            <tr>
+                <td>@obj.Nome</td>
+                <td>@obj.Matricula</td>
+                <td>@obj.Email</td>
+                <td>@obj.Situacao</td>
+                <td>
+                    <a href=@($"/aluno/{Acoes.Consultar}/{obj.Id}") class="btn btn-secondary">Consultar</a>
+                    <a href=@($"/aluno/{Acoes.Alterar}/{obj.Id}") class="btn btn-warning">Alterar</a>
+                    <a href=@($"/aluno/{Acoes.Excluir}/{obj.Id}") class="btn btn-danger">Excluir</a>
+                </td>
+            </tr>
+        }      
+        </tbody>  
+    </table>
+
+}
+
+@code {
+    private IList<Aluno>? Objetos { get; set; } = null;
+    private IList<Aluno> ObjetosFiltrados { get; set; } = new List<Aluno>();
+    private string filtroSituacao = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        Objetos = await api.GetAsync<Aluno>("/api/aluno");
+        ObjetosFiltrados = Objetos.ToList(); // Inicialmente, exibe todos os alunos
+    }
+
+    private void Filtrar()
+    {
+        if (string.IsNullOrEmpty(filtroSituacao))
+        {
+            ObjetosFiltrados = Objetos.ToList(); // Mostrar todos os alunos se nenhum filtro estiver selecionado
+        }
+        else
+        {
+            ObjetosFiltrados = Objetos.Where(a => a.Situacao.Equals(filtroSituacao, StringComparison.OrdinalIgnoreCase)).ToList();
+        }
+    }
+}
