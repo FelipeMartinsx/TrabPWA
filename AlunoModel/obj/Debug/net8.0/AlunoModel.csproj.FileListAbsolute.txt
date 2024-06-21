@@ -1,0 +1,22 @@
+/home/felipe/Área de Trabalho/TrabalhoPWA/AlunoModel/bin/Debug/net8.0/AlunoModel.deps.json
+/home/felipe/Área de Trabalho/TrabalhoPWA/AlunoModel/bin/Debug/net8.0/AlunoModel.dll
+/home/felipe/Área de Trabalho/TrabalhoPWA/AlunoModel/bin/Debug/net8.0/AlunoModel.pdb
+/home/felipe/Área de Trabalho/TrabalhoPWA/AlunoModel/obj/Debug/net8.0/AlunoModel.GeneratedMSBuildEditorConfig.editorconfig
+/home/felipe/Área de Trabalho/TrabalhoPWA/AlunoModel/obj/Debug/net8.0/AlunoModel.AssemblyInfoInputs.cache
+/home/felipe/Área de Trabalho/TrabalhoPWA/AlunoModel/obj/Debug/net8.0/AlunoModel.AssemblyInfo.cs
+/home/felipe/Área de Trabalho/TrabalhoPWA/AlunoModel/obj/Debug/net8.0/AlunoModel.csproj.CoreCompileInputs.cache
+/home/felipe/Área de Trabalho/TrabalhoPWA/AlunoModel/obj/Debug/net8.0/AlunoModel.dll
+/home/felipe/Área de Trabalho/TrabalhoPWA/AlunoModel/obj/Debug/net8.0/refint/AlunoModel.dll
+/home/felipe/Área de Trabalho/TrabalhoPWA/AlunoModel/obj/Debug/net8.0/AlunoModel.pdb
+/home/felipe/Área de Trabalho/TrabalhoPWA/AlunoModel/obj/Debug/net8.0/ref/AlunoModel.dll
+/home/felipe/Área de Trabalho/TrabalhoPWA (cópia)/AlunoModel/bin/Debug/net8.0/AlunoModel.deps.json
+/home/felipe/Área de Trabalho/TrabalhoPWA (cópia)/AlunoModel/bin/Debug/net8.0/AlunoModel.dll
+/home/felipe/Área de Trabalho/TrabalhoPWA (cópia)/AlunoModel/bin/Debug/net8.0/AlunoModel.pdb
+/home/felipe/Área de Trabalho/TrabalhoPWA (cópia)/AlunoModel/obj/Debug/net8.0/AlunoModel.GeneratedMSBuildEditorConfig.editorconfig
+/home/felipe/Área de Trabalho/TrabalhoPWA (cópia)/AlunoModel/obj/Debug/net8.0/AlunoModel.AssemblyInfoInputs.cache
+/home/felipe/Área de Trabalho/TrabalhoPWA (cópia)/AlunoModel/obj/Debug/net8.0/AlunoModel.AssemblyInfo.cs
+/home/felipe/Área de Trabalho/TrabalhoPWA (cópia)/AlunoModel/obj/Debug/net8.0/AlunoModel.csproj.CoreCompileInputs.cache
+/home/felipe/Área de Trabalho/TrabalhoPWA (cópia)/AlunoModel/obj/Debug/net8.0/AlunoModel.dll
+/home/felipe/Área de Trabalho/TrabalhoPWA (cópia)/AlunoModel/obj/Debug/net8.0/refint/AlunoModel.dll
+/home/felipe/Área de Trabalho/TrabalhoPWA (cópia)/AlunoModel/obj/Debug/net8.0/AlunoModel.pdb
+/home/felipe/Área de Trabalho/TrabalhoPWA (cópia)/AlunoModel/obj/Debug/net8.0/ref/AlunoModel.dll

@@ -1,0 +1,15 @@
+/home/professor/Documentos/Camillo/Aula06b/AlunoInfra/bin/Debug/net8.0/AlunoInfra.deps.json
+/home/professor/Documentos/Camillo/Aula06b/AlunoInfra/bin/Debug/net8.0/AlunoInfra.dll
+/home/professor/Documentos/Camillo/Aula06b/AlunoInfra/bin/Debug/net8.0/AlunoInfra.pdb
+/home/professor/Documentos/Camillo/Aula06b/AlunoInfra/bin/Debug/net8.0/AlunoModel.dll
+/home/professor/Documentos/Camillo/Aula06b/AlunoInfra/bin/Debug/net8.0/AlunoModel.pdb
+/home/professor/Documentos/Camillo/Aula06b/AlunoInfra/obj/Debug/net8.0/AlunoInfra.csproj.AssemblyReference.cache
+/home/professor/Documentos/Camillo/Aula06b/AlunoInfra/obj/Debug/net8.0/AlunoInfra.GeneratedMSBuildEditorConfig.editorconfig
+/home/professor/Documentos/Camillo/Aula06b/AlunoInfra/obj/Debug/net8.0/AlunoInfra.AssemblyInfoInputs.cache
+/home/professor/Documentos/Camillo/Aula06b/AlunoInfra/obj/Debug/net8.0/AlunoInfra.AssemblyInfo.cs
+/home/professor/Documentos/Camillo/Aula06b/AlunoInfra/obj/Debug/net8.0/AlunoInfra.csproj.CoreCompileInputs.cache
+/home/professor/Documentos/Camillo/Aula06b/AlunoInfra/obj/Debug/net8.0/AlunoInfra.csproj.CopyComplete
+/home/professor/Documentos/Camillo/Aula06b/AlunoInfra/obj/Debug/net8.0/AlunoInfra.dll
+/home/professor/Documentos/Camillo/Aula06b/AlunoInfra/obj/Debug/net8.0/refint/AlunoInfra.dll
+/home/professor/Documentos/Camillo/Aula06b/AlunoInfra/obj/Debug/net8.0/AlunoInfra.pdb
+/home/professor/Documentos/Camillo/Aula06b/AlunoInfra/obj/Debug/net8.0/ref/AlunoInfra.dll
